@@ -1,12 +1,30 @@
 html,
 body,
 * {
-    font-family: "Averia Serif Libre", serif;
+    font-family: "SUSE", sans-serif;
 
     h1 {
-        font-size 50px;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-size: 50px;
         text-align: center;
-        font-weight: 500;
+        font-weight: 300;
+    }
+
+    .parent {
+        font-family: "SUSE", sans-serif;
+        display: flex;
+        flex-direction: row;
+        height: 50vw;
+        width: 100vw;
+    }
+
+    .post {
+        border: solid black;
+        width: 30%;
+        height: 90%;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
     }
 
 }
