@@ -8,6 +8,7 @@ body,
         font-size: 50px;
         text-align: center;
         font-weight: 300;
+        background-color: cornflowerblue;
     }
 
     .parent {
@@ -16,7 +17,11 @@ body,
         flex-direction: row;
         height: 50vw;
         width: 100vw;
+
     }
+
+    /* write the media screen code in order of largest to smallest screen .post { */
+
 
     .post {
         border: solid black;
@@ -25,6 +30,11 @@ body,
         margin: 10px;
         padding: 5px;
         text-align: center;
+
     }
 
-}
+    .pictures {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+    }
