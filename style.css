@@ -5,36 +5,50 @@ body,
 
     h1 {
         font-family: "Protest Guerrilla", sans-serif;
-        font-size: 50px;
+        color: #f0f8ff;
+        font-size: 80px;
         text-align: center;
         font-weight: 300;
-        background-color: cornflowerblue;
+        padding: 100px;
+        background-image: url("https://charlieontravel.com/wp-content/uploads/2022/05/DSCF4070-scaled.jpg");
+        background-size: 100%;
     }
 
-    .parent {
-        font-family: "SUSE", sans-serif;
-        display: flex;
-        flex-direction: row;
-        height: 50vw;
-        width: 100vw;
+    @media screen and (max-width: 600px) {
+        .parent {
+            font-family: "SUSE", sans-serif;
+            display: flex;
+            flex-direction: clolumn;
+            height: 50vw;
+            width: 100vw;
+        }
 
+        .post {
+            border: solid black;
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+        }
     }
 
-    /* write the media screen code in order of largest to smallest screen .post { */
+}
 
+/* write the media screen code in order of largest to smallest screen .post { */
+.post {
+    border: solid black;
+    width: 30%;
+    height: 90%;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
 
-    .post {
-        border: solid black;
-        width: 30%;
-        height: 90%;
-        margin: 10px;
-        padding: 5px;
-        text-align: center;
+}
 
-    }
-
-    .pictures {
-        width: 100%;
-        object-fit: cover;
-        display: flex;
-    }
+.pictures {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    display: flex;
+}
