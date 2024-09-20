@@ -2,6 +2,7 @@ html,
 body,
 * {
     font-family: "SUSE", sans-serif;
+    font-size:40px;
 
     h1 {
         font-family: "Protest Guerrilla", sans-serif;
@@ -14,7 +15,7 @@ body,
         background-size: 100%;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
         .parent {
             font-family: "SUSE", sans-serif;
             display: flex;
@@ -36,13 +37,22 @@ body,
 }
 
 /* write the media screen code in order of largest to smallest screen .post { */
+.parent {
+    font-family: "SUSE", sans-serif;
+    display: flex;
+    flex-direction: clolumn;
+    height: 50vw;
+    width: 100vw;
+}
 .post {
+    font-weight:bold;
     border: solid black;
     width: 30%;
     height: 90%;
-    margin: 10px;
-    padding: 5px;
+    margin: 15px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 15px 20px 15px rgb(248, 202, 179);
 
 }
 
@@ -51,4 +61,5 @@ body,
     height: 80%;
     object-fit: cover;
     display: flex;
+    border: 2px solid black
 }
