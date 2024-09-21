@@ -12,10 +12,10 @@ body,
         font-weight: 300;
         padding: 100px;
         background-image: url("https://charlieontravel.com/wp-content/uploads/2022/05/DSCF4070-scaled.jpg");
-        background-size: 100%;
+        background-position-y: 100%;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen (max-width: 600px) {
         .parent {
             font-family: "SUSE", sans-serif;
             display: flex;
