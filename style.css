@@ -47,14 +47,9 @@ body,
 
     @media screen and (max-width: 600px) {
         h1 {
-            font-size: 5rem;
-            text-align: center;
-            font-weight: 300;
-            padding: 120px;        
-            margin-bottom:40px;
-            background-image: url("https://i.pinimg.com/564x/af/6c/a5/af6ca57294fc1da15ae20388fa48c55c.jpg");
-            background-position-y:50%;
-            background-position-x: 125%
+            font-size: 4rem;
+            padding: 2rem;        
+            margin-bottom:4rem;
         }
 
         .parent {
