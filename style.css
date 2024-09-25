@@ -1,40 +1,53 @@
-html,
+ html,
 body,
 * {
     font-family: "SUSE", sans-serif;
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
+    font-size: 16px;
+    margin: 0;   
+    box-sizing:border-box;
+    text-align: center; /* Base font size */
 
+@media screen and (min-width: 801px) {
     h1 {
         font-family: "Protest Guerrilla", sans-serif;
+        width:100vw;
+        height:30vh;
         color: #f0f8ff;
         font-weight: 300;
-        padding: 3rem;
-        margin-bottom: 0.5rem;
         background-image: url("https://i.pinimg.com/564x/af/6c/a5/af6ca57294fc1da15ae20388fa48c55c.jpg");
-        background-position-y: 50%;
-        background-position-x: 125%
-    }
+        background-position: center;
+        display:flex;
+        justify-content: center;
+        align-items:center;  
+        /* adjst following iterms for media queries*/
+        font-size: 6vw; 
+        padding: 7rem;
+        margin-bottom: 0.5rem;
+     
+     }
 
     .parent {
-        font-family: "SUSE", sans-serif;
         display: flex;
-        flex-direction: column;
-        height: 150%;
-        width: 25%;
+        flex-wrap:wrap; /* moves items overlfowing to the next line*/
+        flex-direction: row;
+        width: 100%;
+        gap:1rem;
+        /* adjst following iterms for media queries*/
+        height:100%;
+
     }
 
     .post {
         font-weight: bold;
-        font-size: 1rem;
         box-sizing: border-box;
-        border: solid black;
-        width: 100%;
-        height: 30%;
-        margin: 0.5rem;
-        padding: 1rem;
+        border: 2px solid black;
         box-shadow: 15px 20px 15px rgb(248, 202, 179);
+        /* adjst following iterms for media queries*/
+        font-size: 8rem;
+        width: 22vw;
+        height: 40vw;
+        margin: 1rem; 
+        padding: 1rem;
     }
 
     .pictures {
@@ -42,35 +55,66 @@ body,
         height: 80%;
         object-fit: cover;
         display: flex;
-        border: 2px solid black
+        border: 2px solid black;
+        /* adjst following iterms for media queries*/        
+        margin-bottom:1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 6vw; 
+        padding: 3rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .parent {
+        width: 50%;
+
+        }
+
+    .post {
+        font-size: 0.5rem;
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+        padding: 0.1rem;
+        
+    }
+
+    .pictures {
+        margin-bottom:1rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 1rem;
-        padding: 0rem;
+        font-size: 6vw; 
+        padding: 3rem;
         margin-bottom: 0.25rem;
     }
 
     .parent {
-        width: 100%;
-        height: 60%;
-        margin: 0rem;
-    }
+        height: 100%;
+        width:100%;
+        }
 
     .post {
-        font-size: 1.5rem;
-        width: 10%;
-        height: 50%;
+        font-size: 0.5rem;
+        width: 100%;
+        height: auto;
         margin: 1rem;
         padding: 0.1rem;
+        
     }
 
     .pictures {
-        margin: 0rem;
+        margin-bottom:1rem;
     }
 }
 
 
-/* write the media screen code in order of largest to smallest screen .post { */
+/* write the media screen code in order of largest to smallest screen .post { */ 
+
+/* write the media screen code in order of largest to smallest screen .post { */ 
+
