@@ -47,6 +47,11 @@ body,
         flex-direction: column; 
         justify-content: center;
         align-items: center; 
+        transition: transform 0.3 ease; /* 0.3 sec transition from regular state to hover state*/
+    }
+
+    .post:hover {
+        transform: scale(1.2) rotate(6deg);
     }
 
     .pictures {
