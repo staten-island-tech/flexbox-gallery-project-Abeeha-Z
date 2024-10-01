@@ -34,6 +34,7 @@ body,
     }
 
     .post {
+        background-color: whitesmoke;
         font-weight: bold;
         box-sizing: border-box;
         border: 2px solid black;
@@ -47,11 +48,12 @@ body,
         flex-direction: column; 
         justify-content: center;
         align-items: center; 
-        transition: transform 0.3 ease; /* 0.3 sec transition from regular state to hover state*/
+        transition: transform 0.5s ease; /* 0.3 sec transition from regular state to hover state*/
     }
 
+/* Hover affect to trigger the animation */
     .post:hover {
-        transform: scale(1.2) rotate(6deg);
+        transform: scale(1.25) rotate(6deg);
     }
 
     .pictures {
@@ -90,11 +92,11 @@ body,
             font-size:2rem;
             width:90%;
             margin:0.5rem 0; /* 0.5 top and bottom, 0 left and right*/
-
+        }
         .pictures {
             height:80%
         }
         }
     }
-}
+
 
