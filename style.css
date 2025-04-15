@@ -13,7 +13,7 @@ body,
         width: 100vw;
         height: 30vh;
         color: #f0f8ff;
-        font-weight: 300;
+        font-weight: 300rem;
         background-image: url("https://i.pinimg.com/564x/af/6c/a5/af6ca57294fc1da15ae20388fa48c55c.jpg");
         background-position: center;
         display: flex;
